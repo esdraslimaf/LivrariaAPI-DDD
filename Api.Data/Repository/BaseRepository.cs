@@ -22,18 +22,47 @@ namespace Api.Data.Repository
 
         public async Task<T> CreateAsync(T entity)
         {
-            
+
+            if (entity == null)
+            {
+                throw new ArgumentNullException(nameof(entity), "A entidade não pode ser nula.");
+            }
+            try
+            {
                 entity.CreateAt = DateTime.Now;
                 _dbset.Add(entity);
                 await _context.SaveChangesAsync();
-                return entity;          
-        
-            
+                return entity;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception($"Ocorreu um erro ao criar a entidade: {ex.Message}");
+            }
+
         }
 
-        public Task<bool> DeleteAsync(int id)
+        public async Task<bool> DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+
+            try
+            {
+                var Entity = await _dbset.SingleOrDefaultAsync(u => u.Id == id);
+                if (Entity == null)
+                {
+                    return false;
+                }
+                _dbset.Remove(Entity);
+                await _context.SaveChangesAsync();
+
+                return true;
+
+            }
+            catch (Exception erro)
+            {
+
+                throw new Exception($"Um erro ocorreu. Detalhes: {erro}");
+            }
         }
 
         public async Task<IEnumerable<T>> GetAllAsync()
@@ -41,14 +70,30 @@ namespace Api.Data.Repository
             return await _dbset.ToListAsync();
         }
 
-        public Task<T> GetByIdAsync(int id)
+        public async Task<T> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                T entidadebuscada = await _dbset.FirstOrDefaultAsync(t => t.Id == id);
+                if (entidadebuscada != null)
+                {
+                    return entidadebuscada;
+                }
+                else
+                {
+                    throw new Exception("Nenhum item encontrado com o ID fornecido.");
+                }
+            }
+            catch (Exception erro)
+            {
+                throw new Exception($"Um erro ocorreu. Detalhes: {erro}");
+            }
+
         }
 
         public async Task<T> UpdateAsync(T entity)
         {
-         try
+            try
             {
                 var ExisteT = await _dbset.SingleOrDefaultAsync(u => u.Id == entity.Id);
                 if (ExisteT == null)
@@ -58,7 +103,7 @@ namespace Api.Data.Repository
 
                 entity.CreateAt = ExisteT.CreateAt;
                 entity.UpdateAt = DateTime.Now;
-               
+
 
                 _context.Entry(ExisteT).CurrentValues.SetValues(entity);
                 await _context.SaveChangesAsync();

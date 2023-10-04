@@ -9,12 +9,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Application.Controllers
 {
-     [Route("api/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
-    public class AuthorsController:ControllerBase
+    public class AuthorsController : ControllerBase
     {
         private IAuthorService _service;
-         public AuthorsController(IAuthorService service)
+        public AuthorsController(IAuthorService service)
         {
             _service = service;
         }
@@ -45,21 +45,41 @@ namespace Api.Application.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll(){
+        public async Task<IActionResult> GetAll()
+        {
             try
             {
                 return Ok(await _service.GetAll());
             }
-           catch (ArgumentException erro)
+            catch (ArgumentException erro)
             {
                 return StatusCode((int)HttpStatusCode.InternalServerError, erro.Message); // Erro interno do servidor (500)
             }
         }
 
-         [HttpPut]
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            try
+            {
+                return Ok(await _service.Get(id));
+            }
+            catch (Exception erro)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, erro.Message); // Erro interno do servidor (500)
+            }
+
+
+        }
+
+        [HttpPut]
         public async Task<IActionResult> Put([FromBody] AuthorEntity autor)
         {
-            
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -77,6 +97,24 @@ namespace Api.Application.Controllers
                 }
             }
             catch (ArgumentException erro)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, erro.Message);
+            }
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int id)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            try
+            {
+                bool delete = await _service.Delete(id);
+                return Ok(delete);
+            }
+            catch (Exception erro)
             {
                 return StatusCode((int)HttpStatusCode.InternalServerError, erro.Message);
             }

@@ -507,7 +507,7 @@
           "Domain": "1.0.0"
         },
         "runtime": {
-          "service.dll": {}
+          "Service.dll": {}
         }
       }
     }

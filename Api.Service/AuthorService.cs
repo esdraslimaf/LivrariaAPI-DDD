@@ -18,14 +18,14 @@ namespace Api.Service
             _repo = repo;
         }
 
-        public Task<bool> Delete(int id)
+        public async Task<bool> Delete(int id)
         {
-            throw new NotImplementedException();
+           return await _repo.DeleteAsync(id);
         }
 
-        public Task<AuthorEntity> Get(int id)
+        public async Task<AuthorEntity> Get(int id)
         {
-            throw new NotImplementedException();
+          return await _repo.GetByIdAsync(id);
         }
 
         public async Task<IEnumerable<AuthorEntity>> GetAll()
