@@ -28,9 +28,9 @@ namespace Api.Service
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<AuthorEntity>> GetAll()
+        public async Task<IEnumerable<AuthorEntity>> GetAll()
         {
-            throw new NotImplementedException();
+            return await _repo.GetAllAsync();
         }
 
         public async Task<AuthorEntity> Post(AuthorEntity author)
@@ -38,9 +38,9 @@ namespace Api.Service
            return await _repo.CreateAsync(author);
         }
 
-        public Task<AuthorEntity> Put(AuthorEntity author)
+        public async Task<AuthorEntity> Put(AuthorEntity author)
         {
-            throw new NotImplementedException();
+           return await _repo.UpdateAsync(author);
         }
     }
 }

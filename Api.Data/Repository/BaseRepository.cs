@@ -23,6 +23,7 @@ namespace Api.Data.Repository
         public async Task<T> CreateAsync(T entity)
         {
             
+                entity.CreateAt = DateTime.Now;
                 _dbset.Add(entity);
                 await _context.SaveChangesAsync();
                 return entity;          
@@ -35,9 +36,9 @@ namespace Api.Data.Repository
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<T>> GetAllAsync()
+        public async Task<IEnumerable<T>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await _dbset.ToListAsync();
         }
 
         public Task<T> GetByIdAsync(int id)
@@ -45,9 +46,29 @@ namespace Api.Data.Repository
             throw new NotImplementedException();
         }
 
-        public Task<T> UpdateAsync(T entity)
+        public async Task<T> UpdateAsync(T entity)
         {
-            throw new NotImplementedException();
+         try
+            {
+                var ExisteT = await _dbset.SingleOrDefaultAsync(u => u.Id == entity.Id);
+                if (ExisteT == null)
+                {
+                    return null;
+                }
+
+                entity.CreateAt = ExisteT.CreateAt;
+                entity.UpdateAt = DateTime.Now;
+               
+
+                _context.Entry(ExisteT).CurrentValues.SetValues(entity);
+                await _context.SaveChangesAsync();
+
+            }
+            catch (Exception erro)
+            {
+                throw new Exception($"Um erro ocorreu. Detalhes: {erro}");
+            }
+            return entity;
         }
     }
 }

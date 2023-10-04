@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.CrossCutting\\crosscutting.csproj": {}
+    "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.CrossCutting\\CrossCutting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.CrossCutting\\crosscutting.csproj": {
+    "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.CrossCutting\\CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.CrossCutting\\crosscutting.csproj",
-        "projectName": "crosscutting",
-        "projectPath": "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.CrossCutting\\crosscutting.csproj",
+        "projectUniqueName": "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.CrossCutting\\CrossCutting.csproj",
+        "projectName": "CrossCutting",
+        "projectPath": "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.CrossCutting\\CrossCutting.csproj",
         "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",

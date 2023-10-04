@@ -44,5 +44,46 @@ namespace Api.Application.Controllers
             }
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetAll(){
+            try
+            {
+                return Ok(await _service.GetAll());
+            }
+           catch (ArgumentException erro)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, erro.Message); // Erro interno do servidor (500)
+            }
+        }
+
+         [HttpPut]
+        public async Task<IActionResult> Put([FromBody] AuthorEntity autor)
+        {
+            
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            try
+            {
+                AuthorEntity autorAtualizado = await _service.Put(autor);
+                if (autorAtualizado != null)
+                {
+                    return Ok(autorAtualizado);
+                }
+                else
+                {
+                    return BadRequest();
+                }
+            }
+            catch (ArgumentException erro)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, erro.Message);
+            }
+
+
+        }
+
+
     }
 }
