@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.Service\\Service.csproj": {}
+    "c:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Service\\service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.Domain\\Domain.csproj": {
+    "c:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.Domain\\Domain.csproj",
+        "projectUniqueName": "c:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.Domain\\Domain.csproj",
+        "projectPath": "c:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.Domain\\obj\\",
+        "outputPath": "c:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.Service\\Service.csproj": {
+    "c:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Service\\service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.Service\\Service.csproj",
-        "projectName": "Service",
-        "projectPath": "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.Service\\Service.csproj",
+        "projectUniqueName": "c:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Service\\service.csproj",
+        "projectName": "service",
+        "projectPath": "c:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Service\\service.csproj",
         "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.Service\\obj\\",
+        "outputPath": "c:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,8 +91,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.Domain\\Domain.csproj"
+              "c:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Domain\\Domain.csproj"
               }
             }
           }
@@ -106,6 +106,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

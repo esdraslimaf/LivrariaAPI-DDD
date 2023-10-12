@@ -1,4 +1,6 @@
 using Api.CrossCutting.DependencyInjector;
+using Api.CrossCutting.Mappings;
+using AutoMapper;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +9,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 ConfigureRepository.ConfiguracaoDependenciaRepositorio(builder.Services);
 ConfigureService.ConfiguracaoDependenciaService(builder.Services);
+
+var config = new AutoMapper.MapperConfiguration(conf=>{
+conf.AddProfile(new DtoToModelProfile());
+conf.AddProfile(new EntityToDtoProfile());
+conf.AddProfile(new ModelToEntityProfile());
+});
+
+IMapper mapper = config.CreateMapper();
+builder.Services.AddSingleton(mapper);
+
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

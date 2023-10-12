@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "c4v367ZW8KxJsiDIcbfaYhTE8Uph8FTZozlVeC+w6sP7MevIKfpnXwnonjwmuqJEdj2WChUrSk0y7sRQ3GiqXg==",
+  "dgSpecHash": "fcC2edzSnvXlfdAT4CsIe8TVQg/btwBPZiynl2CoO9ymNPDlo+Y7rWeeQTk1p9MrWgeZeSJ6oanT15eU3MsBaw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.Service\\Service.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "c:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Service\\service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuário\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Usuário\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

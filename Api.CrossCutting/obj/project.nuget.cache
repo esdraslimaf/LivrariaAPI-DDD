@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WDP+GZC3sNU1QaRsnZ5vAoVBb7O54CVujFsWXxRuX6OlwJUTrpxbrEPC2OhjkYEkPD9RsWyqXgd9//IqBh6b4A==",
+  "dgSpecHash": "FXlUaUahLOAE9LvI2DJueSHoYLqbSmLI54gyDVtMHaHfxXv0dhbBMgiXwIbTMNupfqqMf80wvjMQuNwjUPy0iw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuário\\Desktop\\Projeto\\BookDDD\\src\\Api.CrossCutting\\CrossCutting.csproj",
+  "projectFilePath": "c:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.CrossCutting\\crosscutting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuário\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

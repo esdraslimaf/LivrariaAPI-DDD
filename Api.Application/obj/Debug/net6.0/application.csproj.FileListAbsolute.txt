@@ -69,3 +69,6 @@ C:\Users\Usuário\Desktop\Projeto\BookDDD\src\Api.Application\bin\Debug\net6.0\s
 C:\Users\Usuário\Desktop\Projeto\BookDDD\src\Api.Application\bin\Debug\net6.0\service.pdb
 C:\Users\Usuário\Desktop\Projeto\BookDDD\src\Api.Application\bin\Debug\net6.0\CrossCutting.pdb
 C:\Users\Usuário\Desktop\Projeto\BookDDD\src\Api.Application\bin\Debug\net6.0\Data.pdb
+C:\Users\Usuário\Desktop\Projetos Clonados\Biblioteca\LivrariaAPI-DDD\Api.Application\obj\Debug\net6.0\application.dll
+C:\Users\Usuário\Desktop\Projetos Clonados\Biblioteca\LivrariaAPI-DDD\Api.Application\obj\Debug\net6.0\refint\application.dll
+C:\Users\Usuário\Desktop\Projetos Clonados\Biblioteca\LivrariaAPI-DDD\Api.Application\obj\Debug\net6.0\application.pdb

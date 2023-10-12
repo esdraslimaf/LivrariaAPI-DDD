@@ -13,3 +13,6 @@ C:\Users\Usuário\Desktop\Projeto\BookDDD\src\Api.Service\obj\Debug\net6.0\servi
 C:\Users\Usuário\Desktop\Projeto\BookDDD\src\Api.Service\obj\Debug\net6.0\refint\service.dll
 C:\Users\Usuário\Desktop\Projeto\BookDDD\src\Api.Service\obj\Debug\net6.0\service.pdb
 C:\Users\Usuário\Desktop\Projeto\BookDDD\src\Api.Service\obj\Debug\net6.0\ref\service.dll
+C:\Users\Usuário\Desktop\Projetos Clonados\Biblioteca\LivrariaAPI-DDD\Api.Service\obj\Debug\net6.0\service.dll
+C:\Users\Usuário\Desktop\Projetos Clonados\Biblioteca\LivrariaAPI-DDD\Api.Service\obj\Debug\net6.0\refint\service.dll
+C:\Users\Usuário\Desktop\Projetos Clonados\Biblioteca\LivrariaAPI-DDD\Api.Service\obj\Debug\net6.0\service.pdb

@@ -15,3 +15,6 @@ C:\Users\Usuário\Desktop\Projeto\BookDDD\src\Api.Data\obj\Debug\net6.0\Data.pdb
 C:\Users\Usuário\Desktop\Projeto\BookDDD\src\Api.Data\obj\Debug\net6.0\ref\Data.dll
 C:\Users\Usuário\Desktop\Projeto\BookDDD\src\Api.Data\bin\Debug\net6.0\Data.runtimeconfig.json
 C:\Users\Usuário\Desktop\Projeto\BookDDD\src\Api.Data\obj\Debug\net6.0\Data.genruntimeconfig.cache
+C:\Users\Usuário\Desktop\Projetos Clonados\Biblioteca\LivrariaAPI-DDD\Api.Data\obj\Debug\net6.0\Data.dll
+C:\Users\Usuário\Desktop\Projetos Clonados\Biblioteca\LivrariaAPI-DDD\Api.Data\obj\Debug\net6.0\refint\Data.dll
+C:\Users\Usuário\Desktop\Projetos Clonados\Biblioteca\LivrariaAPI-DDD\Api.Data\obj\Debug\net6.0\Data.pdb
