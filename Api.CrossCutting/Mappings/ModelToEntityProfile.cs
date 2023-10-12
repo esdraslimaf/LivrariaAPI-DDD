@@ -13,6 +13,7 @@ namespace Api.CrossCutting.Mappings
         public ModelToEntityProfile()
         {
             CreateMap<AuthorModel, AuthorEntity>().ReverseMap();
+            CreateMap<BookModel, BookEntity>().ReverseMap();
         }
     }
 }

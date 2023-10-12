@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using Api.Domain.Dtos.Books;
 using Api.Domain.Entities;
 using Api.Domain.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -22,7 +23,7 @@ namespace Api.Application.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] BookEntity book)
+        public async Task<IActionResult> Post([FromBody] BookDtoCreate book)
         {
             if (!ModelState.IsValid)
             {
@@ -77,7 +78,7 @@ namespace Api.Application.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> Put([FromBody] BookEntity book)
+        public async Task<IActionResult> Put([FromBody] BookDtoUpdate book)
         {
             if (!ModelState.IsValid)
             {
@@ -85,7 +86,7 @@ namespace Api.Application.Controllers
             }
             try
             {
-                BookEntity updatedBook = await _service.Put(book);
+                var updatedBook = await _service.Put(book);
                 if (updatedBook != null)
                 {
                     return Ok(updatedBook);
