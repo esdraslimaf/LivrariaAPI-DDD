@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fcC2edzSnvXlfdAT4CsIe8TVQg/btwBPZiynl2CoO9ymNPDlo+Y7rWeeQTk1p9MrWgeZeSJ6oanT15eU3MsBaw==",
+  "dgSpecHash": "wB2TUpg7l6mhB/HP/YM7tRv5ZoBfP98gNH1wXpOoUD4O1Ehibm+hNm6sG0qPVse7ogJ8JDRupK58FKjVaFmi1g==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Service\\service.csproj",
+  "projectFilePath": "C:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Service\\Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuário\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"

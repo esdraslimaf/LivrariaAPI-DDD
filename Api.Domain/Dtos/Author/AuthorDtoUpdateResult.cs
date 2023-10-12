@@ -7,7 +7,7 @@ namespace Api.Domain.Dtos.Author
 {
     public class AuthorDtoUpdateResult //Usado para retornar o resultado de uma operação de atualização
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public DateTime UpdateAt { get; set; }
     }

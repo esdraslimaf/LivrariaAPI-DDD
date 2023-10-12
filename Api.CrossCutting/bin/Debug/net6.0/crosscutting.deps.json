@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "CrossCutting/1.0.0": {
         "dependencies": {
+          "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Data": "1.0.0",
           "Service": "1.0.0"
@@ -504,6 +505,7 @@
       },
       "Service/1.0.0": {
         "dependencies": {
+          "AutoMapper": "12.0.1",
           "Domain": "1.0.0"
         },
         "runtime": {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OWMjphzysKVAHAtalr4ORwK9Rw2VM9hi0MINgxzgmg5BfodC64/8GspvRFeHaS7HpeWvNSSGX3mIb+KDkr8OAQ==",
+  "dgSpecHash": "meTth/8EJXKTdRdixGNflLY9M5DuM2dCTQ6jUbmfvpJ8UUMBGDOPC5QOFxY0cgFePdBhpFqF4hdOTC+XLmYokw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

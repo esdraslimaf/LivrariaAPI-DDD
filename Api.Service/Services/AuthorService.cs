@@ -6,6 +6,7 @@ using Api.Domain.Dtos.Author;
 using Api.Domain.Entities;
 using Api.Domain.Interfaces;
 using Api.Domain.Interfaces.Services;
+using Api.Domain.Models;
 using AutoMapper;
 
 namespace Api.Service
@@ -28,22 +29,31 @@ namespace Api.Service
 
         public async Task<AuthorDto> Get(int id)
         {
-          return await _repo.GetByIdAsync(id);
+          return _mapper.Map<AuthorDto>(await _repo.GetByIdAsync(id));
         }
 
         public async Task<IEnumerable<AuthorDto>> GetAll()
         {
-            return await _repo.GetAllAsync();
+            return _mapper.Map<IEnumerable<AuthorDto>>(await _repo.GetAllAsync());
         }
 
         public async Task<AuthorDtoCreateResult> Post(AuthorDtoCreate author)
         {
-           return await _repo.CreateAsync(author);
+           var authorModel = _mapper.Map<AuthorModel>(author);
+
+            var authorEntity = _mapper.Map<AuthorEntity>(authorModel);
+
+            var result = await _repo.CreateAsync(authorEntity);
+
+           return _mapper.Map<AuthorDtoCreateResult>(result);
         }
 
         public async Task<AuthorDtoUpdateResult> Put(AuthorDtoUpdate author)
         {
-           return await _repo.UpdateAsync(author);
+            var model = _mapper.Map<AuthorModel>(author);
+            var entity = _mapper.Map<AuthorEntity>(model);
+            var result = await _repo.UpdateAsync(entity); //Retorna o Entity já atualizado(Tanto hora de criação quanto hora de atualização, baseado no entity existente do banco de dados)
+            return _mapper.Map<AuthorDtoUpdateResult>(result);
         }
     }
 }

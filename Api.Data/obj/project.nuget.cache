@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pysHdiStZN69usXd5UljO/PonmXR5Rmp2yB28rDKCs74avxCko2F2P1KC0d1vSs3WzIc/xL9tF3LRResX3DydQ==",
+  "dgSpecHash": "ZRvuCzbxaPAfDk6RK8FoJ2huxYbNJ5l5ElTpmYrpIBuLNigP5kEaoIBMwajAMp7diV25cYK++q+qcQUnmtTcVw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Data\\Data.csproj",
+  "projectFilePath": "C:\\Users\\Usuário\\Desktop\\Projetos Clonados\\Biblioteca\\LivrariaAPI-DDD\\Api.Data\\Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuário\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Usuário\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
