@@ -14,7 +14,7 @@ namespace Api.CrossCutting.DependencyInjector
         public static void ConfiguracaoDependenciaService(IServiceCollection serviceCollection){
         serviceCollection.AddTransient<IAuthorService, AuthorService>(); 
         serviceCollection.AddTransient<IBookService, BookService>(); 
-
+        serviceCollection.AddTransient<IEmployeeService, EmployeeService>(); 
     }
 }
 }

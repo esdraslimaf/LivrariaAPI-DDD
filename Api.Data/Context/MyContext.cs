@@ -17,6 +17,7 @@ namespace Api.Data.Context
 
         public DbSet<AuthorEntity> Authors { get; set; }
         public DbSet<BookEntity> Books { get; set; }
+        public DbSet<EmployeeEntity> Employees { get; set; }
 
         //OnModelCreating é chamado durante o processo de criação das migrações e, posteriormente, durante a inicialização do contexto de banco de dados. 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -24,6 +25,7 @@ namespace Api.Data.Context
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new AuthorMap());
             modelBuilder.ApplyConfiguration(new BookMap());
+            modelBuilder.ApplyConfiguration(new EmployeeMap());
         }
     }
 }

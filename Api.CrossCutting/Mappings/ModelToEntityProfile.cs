@@ -14,6 +14,7 @@ namespace Api.CrossCutting.Mappings
         {
             CreateMap<AuthorModel, AuthorEntity>().ReverseMap();
             CreateMap<BookModel, BookEntity>().ReverseMap();
+            CreateMap<EmployeeModel, EmployeeEntity>().ReverseMap();
         }
     }
 }

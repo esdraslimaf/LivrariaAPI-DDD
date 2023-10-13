@@ -15,6 +15,7 @@ conf.AddProfile(new DtoToModelProfile());
 conf.AddProfile(new EntityToDtoProfile());
 conf.AddProfile(new ModelToEntityProfile());
 });
+  
 
 IMapper mapper = config.CreateMapper();
 builder.Services.AddSingleton(mapper);

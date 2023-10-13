@@ -12,9 +12,9 @@ namespace Api.Data.Mapping
         public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<AuthorEntity> builder)
         {
             builder.ToTable("Authors");
-            builder.HasKey(a=>a.Id);
-            builder.Property(a=>a.Name).HasMaxLength(100).IsRequired();
-           builder.HasMany(a => a.Books)
+            builder.HasKey(a => a.Id);
+            builder.Property(a => a.Name).HasMaxLength(100).IsRequired();
+            builder.HasMany(a => a.Books)
                 .WithOne(b => b.Author)
                 .HasForeignKey(b => b.AuthorId);
         }
