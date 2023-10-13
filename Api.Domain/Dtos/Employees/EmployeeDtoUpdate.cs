@@ -5,9 +5,11 @@ using System.Threading.Tasks;
 
 namespace Api.Domain.Dtos.Employees
 {
-    public class EmployeeDtoCreateResult
+    public class EmployeeDtoUpdate
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
+        public string Password { get; set; }
     }
 }

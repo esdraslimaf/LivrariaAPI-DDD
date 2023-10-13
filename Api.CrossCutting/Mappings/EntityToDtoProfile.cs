@@ -26,9 +26,9 @@ namespace Api.CrossCutting.Mappings
             CreateMap<BookEntity, BookDtoUpdateResult>().ReverseMap();
 
             //Employee
-            //CreateMap<EmployeeEntity, EmployeeDto>().ReverseMap();
+            CreateMap<EmployeeEntity, EmployeeDto>().ReverseMap();
             CreateMap<EmployeeEntity, EmployeeDtoCreateResult>().ReverseMap();
-           // CreateMap<EmployeeEntity, EmployeeDtoUpdateResult>().ReverseMap();
+            CreateMap<EmployeeEntity, EmployeeDtoUpdateResult>().ReverseMap();
 
 
         }
